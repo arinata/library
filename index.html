@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Library</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="toggle-switchy.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id= "container" class="container">
+    <div class="row">
+      <div class="ten columns" style="margin-top: 5%">
+        <h4>Books in Your Library</h4>
+        <h6 id="description">It is very helpful if you have list of boooks that you have read and that you have not, 
+          especially if you are a book lover.
+          This application will help you to create it. <br>
+          Start adding your book by click "New Book" button on the right side.
+        </h6>
+      </div>
+      <div class="two columns" style="margin-top: 6%">
+        <div id="newBookButton" class="button button-primary">New Book</div>
+      </div>
+    </div>
+    <div id="formContainer">
+      <div class='row'>
+        <div class="twelve columns">
+          <label for="bookTitleInput">Book title*</label>
+          <input class='u-full-width' type="text" id="bookTitleInput">
+        </div>
+      </div>
+      <div class='row'>
+        <div class="twelve columns">
+          <label for="bookAuthorInput">Author</label>
+          <input class='u-full-width' type="text" id="bookAuthorInput">
+        </div>
+      </div>
+      <div class='row'>
+        <div class="six columns">
+          <label for="bookPagesInput">Pages</label>
+          <input class='u-half-width' type="text" id="bookPagesInput">
+        </div>
+        <div class="three columns">
+          <label for="bookReadInput">Have read?</label>
+          <select class='u-half-width' id="bookReadInput">
+            <option value="Yes">Yes</option>
+            <option value="Not yet">Not yet</option>
+          </select>
+        </div>
+      </div>
+      <div class='row'>
+        <div class="two columns">
+          <div id="addBookButton" class="button button-primary">Add Book</div>
+        </div>
+      </div>
+    </div>
+    <table id="tableHeadRow" class="u-full-width">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
+  <div class="footers">
+    I use remove icon from <a href="https://www.freeiconspng.com/img/7113">here.</a><br>
+    Check my repository on <a href="https://github.com/arinata">https://github.com/arinata</a>.
+  </div>
+  
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="object.js"></script>
+</body>
+</html>
