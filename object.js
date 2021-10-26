@@ -193,9 +193,14 @@ addBookButton.addEventListener('click', function(e){
         addBookToLibrary(bTitle,bPages,bAuthor,bRead);
         displayLibrary();
         document.getElementById("formContainer").style.display = "none";
+        document.getElementById("description").style.display = "inline";
     }
-    document.getElementById("description").style.display = "inline";
 });      
+
+document.getElementById('cancelButton').addEventListener('click', function(e){
+    document.getElementById("formContainer").style.display = "none";
+    document.getElementById("description").style.display = "inline";
+})
 
 initialization();
 displayLibrary();
