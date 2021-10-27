@@ -189,6 +189,8 @@ addBookButton.addEventListener('click', function(e){
     var bAuthor = document.getElementById("bookAuthorInput").value;
     var bPages = document.getElementById("bookPagesInput").value;
     var bRead = document.getElementById("bookReadInput").value;
+    
+    
     if(bTitle != ""){
         addBookToLibrary(bTitle,bPages,bAuthor,bRead);
         displayLibrary();
@@ -196,11 +198,6 @@ addBookButton.addEventListener('click', function(e){
         document.getElementById("description").style.display = "inline";
     }
 });      
-
-document.getElementById('cancelButton').addEventListener('click', function(e){
-    document.getElementById("formContainer").style.display = "none";
-    document.getElementById("description").style.display = "inline";
-})
 
 initialization();
 displayLibrary();

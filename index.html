@@ -47,39 +47,21 @@
         <div id="newBookButton" class="button button-primary">New Book</div>
       </div>
     </div>
-    <div id="formContainer">
-      <div class='row'>
-        <div class="twelve columns">
+    <form id="formContainer">
           <label for="bookTitleInput">Book title*</label>
-          <input class='u-full-width' type="text" id="bookTitleInput">
-        </div>
-      </div>
-      <div class='row'>
-        <div class="twelve columns">
+          <input class='u-full-width' required type="text" id="bookTitleInput">
           <label for="bookAuthorInput">Author</label>
           <input class='u-full-width' type="text" id="bookAuthorInput">
-        </div>
-      </div>
-      <div class='row'>
-        <div class="six columns">
           <label for="bookPagesInput">Pages</label>
           <input class='u-half-width' type="text" id="bookPagesInput">
-        </div>
-        <div class="three columns">
           <label for="bookReadInput">Have read?</label>
           <select class='u-half-width' id="bookReadInput">
             <option value="Yes">Yes</option>
             <option value="Not yet">Not yet</option>
           </select>
-        </div>
-      </div>
-      <div class='row'>
-        <div class="two cloumns u-full-width">
-          <div id="addBookButton" class="button button-primary">Add Book</div>
-          <div id="cancelButton" class="button button-primary">Cancel</div>
-        </div>
-      </div>
-    </div>
+          <div></div>
+          <button id="addBookButton" class="button button-primary">Add Book</button>
+    </form>
     <table id="tableHeadRow" class="u-full-width">
       <thead>
         <tr>
